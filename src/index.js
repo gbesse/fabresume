@@ -190,3 +190,11 @@ export function analyze(input, { locale = 'fr' } = {}) {
     plan,
   });
 }
+
+export function appendRecoveryEvents(input, events, { locale = 'fr' } = {}) {
+  check(Array.isArray(events) && events.length > 0 && events.length <= 100, locale);
+  const next = structuredClone(input);
+  check(Array.isArray(next.journal), locale);
+  next.journal.push(...structuredClone(events));
+  return { input: next, report: analyze(next, { locale }) };
+}

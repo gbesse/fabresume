@@ -71,3 +71,7 @@ Pruebas de decisiones y contraejemplos, validación de entrada, códigos de sali
 Alfa independiente bajo MIT, sin afiliación a Atomic Machines. Ejemplos y pruebas de demo sintéticos, sin equipos ni API industrial conectados. Repositorio autónomo; no publicado en npm.
 
 [Matter Compiler](https://www.atomicmachines.com/matter-compiler) · [PartCAD](https://github.com/partcad/partcad) · [Bluesky](https://blueskyproject.io/) · [OPC UA Job Management](https://reference.opcfoundation.org/specs/OPC-40001-3/full) · [QIF](https://www.nist.gov/publications/end-end-quality-information-framework-qif-technology-survey)
+
+## API 2026-11-05
+
+`appendRecoveryEvents(input, events, {locale})` prepara nueva entrada y reproduce todas las transiciones antes de devolverla. Ejemplo añade inspección confirmando ausencia de depósito; secuencia inválida nunca modifica original. Sin control de máquinas.
