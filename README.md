@@ -71,3 +71,7 @@ Tests de décisions et contre-exemples, validation des entrées, codes de sortie
 Alpha indépendante sous MIT, non affiliée à Atomic Machines. Exemples et preuves de démonstration synthétiques, aucun équipement ni API industrielle connecté. Dépôt autonome ; pas de publication npm.
 
 [Matter Compiler](https://www.atomicmachines.com/matter-compiler) · [PartCAD](https://github.com/partcad/partcad) · [Bluesky](https://blueskyproject.io/) · [OPC UA Job Management](https://reference.opcfoundation.org/specs/OPC-40001-3/full) · [QIF](https://www.nist.gov/publications/end-end-quality-information-framework-qif-technology-survey)
+
+## API 2026-11-05
+
+`appendRecoveryEvents(input, events, {locale})` prépare un nouveau dossier et rejoue toutes les transitions avant de le retourner. L’exemple ajoute une inspection confirmant une absence de dépôt ; une séquence invalide ne modifie jamais le dossier initial. Aucun pilotage de machine.
