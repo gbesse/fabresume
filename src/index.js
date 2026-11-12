@@ -198,3 +198,14 @@ export function appendRecoveryEvents(input, events, { locale = 'fr' } = {}) {
   next.journal.push(...structuredClone(events));
   return { input: next, report: analyze(next, { locale }) };
 }
+
+export function compareRecoveryBranches(input, branches, { locale = 'fr' } = {}) {
+  check(Array.isArray(branches) && branches.length > 0 && branches.length <= 20, locale);
+  const ids = new Set();
+  return branches.map((branch) => {
+    check(id(branch.id) && !ids.has(branch.id), locale);
+    ids.add(branch.id);
+    const result = appendRecoveryEvents(input, branch.events, { locale });
+    return { id: branch.id, report: result.report, commandsExecuted: false };
+  });
+}

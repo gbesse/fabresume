@@ -75,3 +75,7 @@ Alfa independiente bajo MIT, sin afiliación a Atomic Machines. Ejemplos y prueb
 ## API 2026-11-05
 
 `appendRecoveryEvents(input, events, {locale})` prepara nueva entrada y reproduce todas las transiciones antes de devolverla. Ejemplo añade inspección confirmando ausencia de depósito; secuencia inválida nunca modifica original. Sin control de máquinas.
+
+## 2026-11-12
+
+ES: Comparar ramas de recuperación independientes sin modificar diario ni ejecutar comandos físicos.

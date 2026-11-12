@@ -75,3 +75,7 @@ Alpha indépendante sous MIT, non affiliée à Atomic Machines. Exemples et preu
 ## API 2026-11-05
 
 `appendRecoveryEvents(input, events, {locale})` prépare un nouveau dossier et rejoue toutes les transitions avant de le retourner. L’exemple ajoute une inspection confirmant une absence de dépôt ; une séquence invalide ne modifie jamais le dossier initial. Aucun pilotage de machine.
+
+## 2026-11-12
+
+FR : Comparer des branches de reprise indépendantes sans modifier le journal ni exécuter de commande matérielle.
