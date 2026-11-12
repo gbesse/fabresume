@@ -75,3 +75,7 @@ Independent MIT alpha, not affiliated with Atomic Machines. Synthetic demo examp
 ## API 2026-11-05
 
 `appendRecoveryEvents(input, events, {locale})` prepares a new input and replays every transition before returning it. Example adds an inspection confirming no deposit; invalid sequence never changes original input. No machine control.
+
+## 2026-11-12
+
+EN: Compare independent recovery branches without changing the journal or executing hardware commands.
